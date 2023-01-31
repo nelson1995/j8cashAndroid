@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screenLight">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/screenLight"
+        android:paddingBottom="56dp"
+        android:orientation="vertical"
+        tools:context=".fragments.ProfileFragment">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/main_margin"
+            android:layout_marginTop="@dimen/main_margin"
+            android:layout_marginRight="@dimen/main_margin"
+            android:background="@color/colorWhite"
+            app:cardCornerRadius="@dimen/card_corner_radius"
+            app:cardElevation="@dimen/card_elevation">
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/colorWhite"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="24dp"
+            android:paddingBottom="24dp">
+
+<!--            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--                android:id="@+id/profile_image"-->
+<!--                android:layout_width="96dp"-->
+<!--                android:layout_height="96dp"-->
+<!--                tools:src="@drawable/profile" />-->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="0dp">
+                <ImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profile_image"
+                    android:layout_width="@dimen/photo_height"
+                    android:layout_height="@dimen/photo_height"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/no_profile_photo" />
+            </androidx.cardview.widget.CardView>
+
+
+
+            <TextView
+                android:id="@+id/fullnames"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Ben Rapha"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/main_margin"
+                android:paddingLeft="@dimen/main_margin"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Wallet:"
+                    android:textSize="@dimen/text_large"
+                    fontPath="@string/font_path_bold"/>
+
+
+                <TextView
+                    android:id="@+id/user_wallet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="UGX 34,000"
+                    android:textSize="@dimen/text_large"
+                    android:paddingLeft="@dimen/main_margin_half"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/main_margin"
+            android:layout_marginTop="@dimen/main_margin"
+            android:layout_marginRight="@dimen/main_margin"
+            android:background="@color/colorWhite"
+            app:cardCornerRadius="@dimen/card_corner_radius"
+            app:cardElevation="@dimen/card_elevation">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/main_margin"
+                android:background="@color/colorWhite">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/main_margin"
+                    android:paddingRight="@dimen/main_margin"
+                    android:paddingLeft="@dimen/main_margin"
+                    android:id="@+id/link_withdraw"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/icon_account_height"
+                        android:layout_height="@dimen/icon_account_height"
+                        android:src="@drawable/ic_withdraw"
+                        android:tint="@color/colorAccent"
+                        android:layout_centerVertical="true"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Withdraw"
+                        android:textColor="@color/colorDark"
+                        android:textSize="@dimen/text_medium"
+                        android:layout_marginLeft="58dp"
+                        android:layout_centerVertical="true"/>
+                    <ImageView
+                        android:layout_width="@dimen/icon_next_height"
+                        android:layout_height="@dimen/icon_next_height"
+                        android:src="@drawable/ic_next"
+                        android:tint="@color/colorAccent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/screenLight"
+                    android:layout_marginTop="@dimen/main_margin"
+                    android:layout_marginBottom="@dimen/main_margin"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingRight="@dimen/main_margin"
+                    android:paddingLeft="@dimen/main_margin"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/link_deposit"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/icon_account_height"
+                        android:layout_height="@dimen/icon_account_height"
+                        android:src="@drawable/ic_deposit"
+                        android:tint="@color/colorAccent"
+                        android:layout_centerVertical="true"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Deposit"
+                        android:textColor="@color/colorDark"
+                        android:textSize="@dimen/text_medium"
+                        android:layout_marginLeft="58dp"
+                        android:layout_centerVertical="true"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/icon_next_height"
+                        android:layout_height="@dimen/icon_next_height"
+                        android:src="@drawable/ic_next"
+                        android:tint="@color/colorAccent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/screenLight"
+                    android:layout_marginTop="@dimen/main_margin"
+                    android:layout_marginBottom="@dimen/main_margin"/>
+
+                <RelativeLayout
+                    android:id="@+id/link_share"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingRight="@dimen/main_margin"
+                    android:paddingLeft="@dimen/main_margin"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/icon_account_height"
+                        android:layout_height="@dimen/icon_account_height"
+                        android:src="@drawable/ic_share"
+                        android:tint="@color/colorAccent"
+                        android:layout_centerVertical="true"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Invite friends"
+                        android:textColor="@color/colorDark"
+                        android:textSize="@dimen/text_medium"
+                        android:layout_marginLeft="58dp"
+                        android:layout_centerVertical="true"/>
+                    <ImageView
+                        android:layout_width="@dimen/icon_next_height"
+                        android:layout_height="@dimen/icon_next_height"
+                        android:src="@drawable/ic_next"
+                        android:tint="@color/colorAccent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/main_margin"
+            android:layout_marginTop="@dimen/main_margin"
+            android:layout_marginRight="@dimen/main_margin"
+            android:layout_marginBottom="@dimen/main_margin"
+            android:background="@color/colorWhite"
+            app:cardCornerRadius="@dimen/card_corner_radius"
+            app:cardElevation="@dimen/card_elevation">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/main_margin"
+            android:background="@color/colorWhite">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingRight="@dimen/main_margin"
+                android:paddingLeft="@dimen/main_margin"
+                android:layout_marginTop="@dimen/main_margin"
+                android:id="@+id/link_qr_code"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/icon_account_height"
+                    android:layout_height="@dimen/icon_account_height"
+                    android:src="@drawable/ic_qrcode"
+                    android:tint="@color/colorAccent"
+                    android:layout_centerVertical="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View QR"
+                    android:textColor="@color/colorDark"
+                    android:textSize="@dimen/text_medium"
+                    android:layout_marginLeft="58dp"
+                    android:layout_centerVertical="true"/>
+                <ImageView
+                    android:layout_width="@dimen/icon_next_height"
+                    android:layout_height="@dimen/icon_next_height"
+                    android:src="@drawable/ic_next"
+                    android:tint="@color/colorAccent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/screenLight"
+                android:layout_marginTop="@dimen/main_margin"
+                android:layout_marginBottom="@dimen/main_margin"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingRight="@dimen/main_margin"
+                android:paddingLeft="@dimen/main_margin"
+                android:id="@+id/link_profile"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/icon_account_height"
+                    android:layout_height="@dimen/icon_account_height"
+                    android:src="@drawable/ic_profile"
+                    android:tint="@color/colorAccent"
+                    android:layout_centerVertical="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Profile"
+                    android:textColor="@color/colorDark"
+                    android:textSize="@dimen/text_medium"
+                    android:layout_marginLeft="58dp"
+                    android:layout_centerVertical="true"/>
+                <ImageView
+                    android:layout_width="@dimen/icon_next_height"
+                    android:layout_height="@dimen/icon_next_height"
+                    android:src="@drawable/ic_next"
+                    android:tint="@color/colorAccent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/screenLight"
+                android:layout_marginTop="@dimen/main_margin"
+                android:layout_marginBottom="@dimen/main_margin"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingRight="@dimen/main_margin"
+                android:paddingLeft="@dimen/main_margin"
+                android:id="@+id/link_contact_us"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/icon_account_height"
+                    android:layout_height="@dimen/icon_account_height"
+                    android:src="@drawable/contact"
+                    android:tint="@color/colorAccent"
+                    android:layout_centerVertical="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contact Us"
+                    android:textColor="@color/colorDark"
+                    android:textSize="@dimen/text_medium"
+                    android:layout_marginLeft="58dp"
+                    android:layout_centerVertical="true"/>
+
+                <ImageView
+                    android:layout_width="@dimen/icon_next_height"
+                    android:layout_height="@dimen/icon_next_height"
+                    android:src="@drawable/ic_next"
+                    android:tint="@color/colorAccent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/screenLight"
+                android:layout_marginTop="@dimen/main_margin"
+                android:layout_marginBottom="@dimen/main_margin"/>
+
+            <RelativeLayout
+                android:id="@+id/btn_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingRight="@dimen/main_margin"
+                android:paddingLeft="@dimen/main_margin"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/icon_account_height"
+                    android:layout_height="@dimen/icon_account_height"
+                    android:src="@drawable/ic_logout"
+                    android:tint="@color/colorAccent"
+                    android:layout_centerVertical="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Logout"
+                    android:textColor="@color/colorDark"
+                    android:textSize="@dimen/text_medium"
+                    android:layout_marginLeft="58dp"
+                    android:layout_centerVertical="true"/>
+
+                <ImageView
+                    android:layout_width="@dimen/icon_next_height"
+                    android:layout_height="@dimen/icon_next_height"
+                    android:src="@drawable/ic_next"
+                    android:tint="@color/colorAccent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

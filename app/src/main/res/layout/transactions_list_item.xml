@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/card_corner_radius"
+    android:background="@color/colorWhite"
+    app:cardElevation="@dimen/card_elevation"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/main_margin"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp">
+        <ImageView
+            android:layout_width="12sp"
+            android:layout_height="12sp"
+                android:src="@drawable/bullet"
+            android:layout_gravity="center_vertical"
+                android:tint="@color/colorAccent"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+                android:orientation="vertical"
+            android:layout_marginLeft="@dimen/main_margin">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/t_title"
+                    android:text="Deposit"
+                    android:textSize="@dimen/text_medium"
+                    android:textColor="@color/colorDark"
+                    android:layout_centerVertical="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/t_date"
+                    android:text="Tue 23, July 2019"
+                    android:layout_marginTop="4dp"
+                    android:textSize="@dimen/text_small"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/colorAccent"/>
+
+        </LinearLayout>
+
+</LinearLayout>
+</androidx.cardview.widget.CardView>

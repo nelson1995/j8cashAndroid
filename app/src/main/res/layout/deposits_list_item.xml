@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/card_corner_radius"
+    android:background="@color/colorWhite"
+    app:cardElevation="@dimen/card_elevation"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="@dimen/main_margin"
+    android:layout_marginLeft="@dimen/main_margin"
+    android:layout_marginRight="@dimen/main_margin"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/main_margin">
+
+    <TextView
+        android:id="@+id/d_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorDark"
+        android:text="13th June 2020, 13:28"
+        android:textSize="@dimen/text_medium"/>
+
+    <TextView
+        android:id="@+id/d_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_medium"
+        android:text="UGX 15,000"
+        android:layout_marginTop="@dimen/main_margin_half"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/d_payment_method"
+        android:background="@drawable/bg_item"
+        android:text="Uganda Mobile Money"
+        android:paddingRight="8dp"
+        android:paddingLeft="8dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="@dimen/main_margin_half"/>
+
+
+</LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,17 @@
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="button_height">48dp</dimen>
+    <dimen name="main_margin">16dp</dimen>
+    <dimen name="text_small">12sp</dimen>
+    <dimen name="text_medium">16sp</dimen>
+    <dimen name="text_large">18sp</dimen>
+    <dimen name="main_margin_half">8dp</dimen>
+    <dimen name="icon_account_height">20dp</dimen>
+    <dimen name="icon_next_height">12dp</dimen>
+    <dimen name="photo_height">90dp</dimen>
+    <dimen name="card_elevation">0dp</dimen>
+    <dimen name="card_corner_radius">12dp</dimen>
+    <dimen name="toolbar_elevation">8dp</dimen>
+</resources>

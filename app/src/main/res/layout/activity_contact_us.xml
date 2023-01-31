@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="@dimen/toolbar_elevation"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".activities.ProfileActivity"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/main_margin"
+                android:paddingRight="@dimen/main_margin"
+                android:paddingLeft="@dimen/main_margin"
+                android:id="@+id/link_email_us"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/icon_account_height"
+                    android:layout_height="@dimen/icon_account_height"
+                    android:src="@drawable/email"
+                    android:tint="@color/colorAccent"
+                    android:layout_centerVertical="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Send email"
+                    android:textColor="@color/colorDark"
+                    android:textSize="@dimen/text_medium"
+                    android:layout_marginLeft="48dp"
+                    android:layout_centerVertical="true"/>
+                <ImageView
+                    android:layout_width="@dimen/icon_next_height"
+                    android:layout_height="@dimen/icon_next_height"
+                    android:src="@drawable/ic_next"
+                    android:tint="@color/colorAccent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/screenLight"
+                android:layout_marginTop="@dimen/main_margin"
+                android:layout_marginBottom="@dimen/main_margin"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingRight="@dimen/main_margin"
+                android:paddingLeft="@dimen/main_margin"
+                android:id="@+id/link_call_us"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/icon_account_height"
+                    android:layout_height="@dimen/icon_account_height"
+                    android:src="@drawable/contact"
+                    android:tint="@color/colorAccent"
+                    android:layout_centerVertical="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Call us"
+                    android:textColor="@color/colorDark"
+                    android:textSize="@dimen/text_medium"
+                    android:layout_marginLeft="48dp"
+                    android:layout_centerVertical="true"/>
+
+                <ImageView
+                    android:layout_width="@dimen/icon_next_height"
+                    android:layout_height="@dimen/icon_next_height"
+                    android:src="@drawable/ic_next"
+                    android:tint="@color/colorAccent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/screenLight"
+                android:layout_marginTop="@dimen/main_margin"
+                android:layout_marginBottom="@dimen/main_margin"/>
+
+            <RelativeLayout
+                android:id="@+id/link_telegram"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingRight="@dimen/main_margin"
+                android:paddingLeft="@dimen/main_margin"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/icon_account_height"
+                    android:layout_height="@dimen/icon_account_height"
+                    android:src="@drawable/ic_telegram"
+                    android:layout_centerVertical="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Join Telegram group"
+                    android:textColor="@color/colorDark"
+                    android:textSize="@dimen/text_medium"
+                    android:layout_marginLeft="48dp"
+                    android:layout_centerVertical="true"/>
+
+                <ImageView
+                    android:layout_width="@dimen/icon_next_height"
+                    android:layout_height="@dimen/icon_next_height"
+                    android:src="@drawable/ic_next"
+                    android:tint="@color/colorAccent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/screenLight"
+                android:layout_marginTop="@dimen/main_margin"
+                android:layout_marginBottom="@dimen/main_margin"/>
+            <RelativeLayout
+                android:id="@+id/link_whatsapp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingRight="@dimen/main_margin"
+                android:paddingLeft="@dimen/main_margin"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/icon_account_height"
+                    android:layout_height="@dimen/icon_account_height"
+                    android:src="@drawable/ic_whatsapp"
+                    android:layout_centerVertical="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Join WhatsApp group"
+                    android:textColor="@color/colorDark"
+                    android:textSize="@dimen/text_medium"
+                    android:layout_marginLeft="48dp"
+                    android:layout_centerVertical="true"/>
+
+                <ImageView
+                    android:layout_width="@dimen/icon_next_height"
+                    android:layout_height="@dimen/icon_next_height"
+                    android:src="@drawable/ic_next"
+                    android:tint="@color/colorAccent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/screenLight"
+                android:layout_marginTop="@dimen/main_margin"
+                android:layout_marginBottom="@dimen/main_margin"/>
+
+
+
+            <RelativeLayout
+                android:id="@+id/link_facebook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingRight="@dimen/main_margin"
+                android:paddingLeft="@dimen/main_margin"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/icon_account_height"
+                    android:layout_height="@dimen/icon_account_height"
+                    android:src="@drawable/facebook_round"
+                    android:layout_centerVertical="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Visit Facebook Page"
+                    android:textColor="@color/colorDark"
+                    android:textSize="@dimen/text_medium"
+                    android:layout_marginLeft="48dp"
+                    android:layout_centerVertical="true"/>
+
+                <ImageView
+                    android:layout_width="@dimen/icon_next_height"
+                    android:layout_height="@dimen/icon_next_height"
+                    android:src="@drawable/ic_next"
+                    android:tint="@color/colorAccent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

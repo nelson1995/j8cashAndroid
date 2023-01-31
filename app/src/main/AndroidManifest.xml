@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.mobile.j8cash">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-sdk tools:overrideLibrary="com.google.zxing.client.android" />
+
+
+    <application
+        android:name=".J8Application"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:hardwareAccelerated="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:icon">
+        <activity
+            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+            android:screenOrientation="portrait"
+            tools:replace="screenOrientation" />
+        <activity android:name=".ProfileActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".ShareActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".ViewQRActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat"/>
+        <activity android:name=".ContactUsActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".ConfirmWithdrawActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UpdateProfileActivity"
+            android:label="@string/title_activity_update_profile"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AirtimeListActivity"
+            android:label="@string/title_activity_airtime_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AirtimeActivity"
+            android:label="@string/title_activity_airtime"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TransfersListActivity"
+            android:label="@string/title_activity_transfers_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DepositsListActivity"
+            android:label="@string/title_activity_deposits_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SendActivity"
+            android:label="@string/title_activity_send"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SendToUsersActivity"
+            android:label="@string/title_activity_send_to_users"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DepositActivity"
+            android:label="@string/title_activity_deposit"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".WithdrawActivity"
+            android:label="@string/withdraw_activity_title"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".WithdrawsListActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PaymentMethodsActivity"
+            android:label="@string/title_activity_payment_methods"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".EnterPinActivity"
+            android:label="@string/title_activity_enter_pin"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".VerifyPhoneActivity"
+            android:label="@string/title_activity_verify_phone"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".EnterPhoneActivity"
+            android:label="@string/title_activity_enter_phone"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SignupActivity"
+            android:label="@string/title_activity_signup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".LandingActivity" />
+        <activity android:name=".BaseActivity" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" />
+
+        <meta-data
+            android:name="DATABASE"
+            android:value="j8cash.db" />
+        <meta-data
+            android:name="VERSION"
+            android:value="12" />
+        <meta-data
+            android:name="QUERY_LOG"
+            android:value="true" />
+        <meta-data
+            android:name="DOMAIN_PACKAGE_NAME"
+            android:value="com.mobile.j8cash" />
+    </application>
+
+</manifest>

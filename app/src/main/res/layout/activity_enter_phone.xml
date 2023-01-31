@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EnterPhoneActivity"
+    android:orientation="vertical"
+    android:background="@color/colorWhite">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="@dimen/toolbar_elevation"
+
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Country"
+            android:textColor="@color/colorDark"
+            android:textSize="18sp"/>
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/ccp_country"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:ccp_showFullName="true"
+            android:layout_marginTop="12dp"
+            app:ccp_showPhoneCode="false"
+            app:ccp_showNameCode="false"
+            app:ccp_defaultNameCode="UG"
+            app:ccp_countryPreference="UG,CD"/>
+
+<!--        <com.jaredrummler.materialspinner.MaterialSpinner-->
+<!--            android:id="@+id/spinner"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="48dp"-->
+<!--            android:layout_marginTop="12sp"-->
+<!--            app:ms_background_color="#f7f7f7"-->
+<!--            app:ms_text_color = "@color/colorDark"/>-->
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Phone Number"
+            android:textColor="@color/colorDark"
+            android:textSize="18sp"
+            android:layout_marginTop="30dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="+256"
+           android:textColor="@color/colorDark"
+           android:textSize="22sp"
+           android:id="@+id/phone_code_text"/>
+
+        <EditText android:id="@+id/input_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:textColor="@color/colorDark"
+            android:hint="781234566"
+            android:textSize="22sp"
+            android:layout_marginLeft="4dp"/>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_save_phone"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        style="@style/ButtonStyle"
+        android:text="Send Verification Code"/>
+
+    </LinearLayout>
+
+</LinearLayout>

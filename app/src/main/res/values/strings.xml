@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">J8Cash</string>
+    <string name="title_home">Home</string>
+    <string name="title_shop">Shop</string>
+    <string name="title_activity">Activity</string>
+    <string name="title_profile">Account</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="font_path_default">fonts/Nunito-Regular.ttf</string>
+    <string name="font_path_bold">fonts/Nunito-Bold.ttf</string>
+    <string name="font_path_itallic">fonts/Nunito-Italic.ttf</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_signup">SignupActivity</string>
+    <string name="title_activity_enter_phone">EnterPhoneActivity</string>
+    <string name="title_activity_verify_phone">VerifyPhoneActivity</string>
+    <string name="title_activity_enter_pin">EnterPinActivity</string>
+    <string name="title_activity_payment_methods">PaymentMethodsActivity</string>
+    <string name="title_activity_deposit">DepositActivity</string>
+    <string name="title_activity_send_to_users">SendToUsersActivity</string>
+    <string name="title_activity_send">SendActivity</string>
+    <string name="logging_in">Logging in...</string>
+    <string name="enter_a_valid_email">Enter a valid email</string>
+    <string name="password_must_have_eight_chars">Password must have at least 8 characters</string>
+    <string name="title_activity_deposits_list">DepositsListActivity</string>
+    <string name="title_activity_transfers_list">TransfersListActivity</string>
+    <string name="title_activity_airtime">AirtimeActivity</string>
+    <string name="title_activity_airtime_list">AirtimeListActivity</string>
+    <string name="title_activity_update_profile">UpdateProfileActivity</string>
+    <string name="withdraw_activity_title">WithdrawActivity</string>
+    <string name="don_t_have_an_account_sign_up"><u>Don\'t have an account? Sign up</u></string>
+
+    <!--    <string name="font_path_default">fonts/Montserrat-Regular.ttf</string>-->
+    <!--    <string name="font_path_bold">fonts/Montserrat-Bold.ttf</string>-->
+    <!--    <string name="font_path_itallic">fonts/Montserrat-Italic.ttf</string>-->
+
+
+</resources>
